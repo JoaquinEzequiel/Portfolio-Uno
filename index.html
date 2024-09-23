@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="icon" href="favicon.ico.ico">
+    <title>Mi Portfolio 👨🏻‍💻 </title>
+
+    <style>
+
+
+        .SobreMi{
+            justify-content: center; 
+            align-items:normal;           
+            margin: 20px auto;      
+            background-color:lightgoldenrodyellow;
+            width: 27%;             
+            padding-top: 5px;
+            padding: 10px;
+            margin-top: 2px;
+            box-shadow: 0px 0px 10px rgb(238, 250, 132); 
+            border-radius: 10px;    
+            text-align:justify; 
+            font-size:small;   
+            font-family:'Open Sans' sans-serif; 
+            overflow: hidden;
+            
+        }
+        .Foto{
+            display: flex; 
+            justify-content: center; 
+            margin: 20px 0;
+            margin-top: 87px;
+            margin-bottom: 20px;
+        }
+
+    .Footer {
+        width: 50%;  /*porcentaje o mejor dicho distancia que va a haber entre las imagenes*/
+        margin: 0 auto;  
+        display: flex;
+        justify-content: space-between;  /* esto me separa las imagenes entre si*/
+    }
+
+    .TextoLimitado{
+        width: 500px; 
+        margin-left: 110px; 
+        background-color: lightgoldenrodyellow; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 290px;
+    }
+    .Formacion {
+        width: 500px; 
+        background-color: lightgoldenrodyellow; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 290px;
+        float: right;
+        margin-right: 150px;
+        margin-top: auto;
+    }
+    .EstiloContacto{
+        background-color: lightgoldenrodyellow; 
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        width: 38%;
+        font-family:'Open Sans';
+        margin: 0 auto;
+    }
+    .menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+
+    </style>
+
+    <script>
+        function ENVIAR(){
+            let Usuario = document.getElementById("txtNombre").value;
+            alert("Gracias!  " + Usuario +"  Mensaje enviado!")
+        }
+
+    </script>
+
+</head>
+
+<body style="background-color: lightblue; font-family:'Poetsen One', sans-serif; ">
+    
+    <header style="background-color: lightgoldenrodyellow; width: 100%; height: 75px; display: flex; align-items: center; justify-content: space-between; ">
+        <h1 style="font-family:'Poetsen One'">⭐Joaquín Ezequiel López⭐</h1>
+        <ul class="menu" style="list-style: none; display: flex; padding: 0; margin: 0;">
+            <li style="margin: 0 15px;"><a href="#scConocimientos" style="text-decoration: none;">Conocimientos</a></li>
+            <li style="margin: 0 15px;"><a href="#scProyectos" style="text-decoration: none;">Proyectos</a></li>
+            <li style="margin: 0 15px;"><a href="#scContacto" style="text-decoration: none;">Contacto</a></li>
+            <li style="margin: 0 15px;"><a href="#scRedes" style="text-decoration: none;">Mis Redes</a></li>
+        </ul>
+    </header>
+
+<div class="Foto">
+    
+        <img src="joaquin.png.jpg" alt="Joaquín"style="width: 210px; height: 210px; border-radius: 50%; object-fit: cover;  box-shadow: 0px 0px 20px rgb(238, 250, 132);">
+    
+</div>
+
+
+<section class="SobreMi" >
+
+    <h2 style="font-family: 'Open Sans'; padding-bottom: 10px; text-align: center;"> <u>Sobre mí </u> </h2>
+    <p style="font-family: Open Sans;">
+        
+        ¡Hola! Me llamo Joaquín. Actualmente me encuentro cursando la carrera de Técnico Universitario en Programación en la UTN de Pacheco.
+        Donde me formé y sigo formando con conocimientos en <b>C/C++, C#, T-SQL, HTML, CSS y JavaScript </b>. <br><br>
+        Me considero una persona responsable, entusiasta, optimista, social, proactiva y persistente. Siempre busco nuevas oportunidades para mejorar mis habilidades técnicas 
+        y colaborar en proyectos que me desafíen a pensar de manera creativa. <br><br>
+        En cuanto a mi relación con la programación, podría describirla como una constante aventura de aprendizaje. Disfruto resolver problemas complejos y explorar nuevas tecnologías que me permitan crecer como desarrollador.
+        Además, me interesa el trabajo en equipo, ya que creo que compartir ideas y colaborar es clave para crear proyectos de manera exitosa. <br>
+    
+    </p>    
+</section>
+
+
+<section id="scConocimientos"  style="margin-top: 120px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+    
+    <div style="flex: 1; min-width: 300px; max-width: 45%;">
+        <h3 style="font-family: Open Sans; font-size: x-large; text-align: center;"> <u>CONOCIMIENTOS</u> </h3>
+        <div style="background-color: lightgoldenrodyellow; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-family: Open Sans;">
+                Poseo conocimientos en los lenguajes <b>C/C++, C#, HTML, CSS, JavaScript y T-SQL</b>, así como también el uso de la librería <b>SFML</b> para C++ y el uso de <b>GitHub</b>. También sé utilizar herramientas de diseño como <b>Solid Edge</b> y <b>AutoCAD</b>. <br><br>
+                Fuera del ámbito del software y la programación, tengo habilidad para manejar tornos (tanto mecánicos como CNC), fresadoras, soldadura y herramientas (manuales, mecánicas y eléctricas). 
+                Además, tengo experiencia en el diseño de planos de piezas (perspectiva caballera, isométrica y sus respectivas vistas) y manejo de herramientas de mejora continua, como <b>Kaizen, 5S, 3M, TPM, Karakuri, Mizusumashi, Heijunka</b>, entre otras.
+            </p>
+        </div>
+    </div>
+
+    <div style="flex: 1; min-width: 300px; max-width: 45%;">
+        <h3 style="font-family: Open Sans; font-size: x-large; text-align: center;"> <u>FORMACIÓN</u> </h3>
+        <div style="background-color: lightgoldenrodyellow; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-family: Open Sans;">
+                Actualmente estoy cursando la Tecnicatura universitaria en Programación en la <b>UTN de Gral. Pacheco</b>. Comencé en el año 2023. <br><br>
+                Mis estudios secundarios los realicé en la <b>Escuela de Educación Técnica N2 ALEMANIA de Villa Ballester</b> donde obtuve mi título como Técnico Electromecánico. Inicié en el 2016 y finalicé en el 2022. <br><br>
+                Poseo un curso certificado por <b>SIEMENS</b> en Diseño en Solid Edge.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section id="scProyectos"   style="margin-top: 100px; display: flex; flex-direction: column; align-items: center;">
+
+    <h2 style="font-family: 'Open Sans'; font-size: xx-large; text-align: center;"> <u>Proyectos</u></h2>
+
+    <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 50px;">
+
+        <div style="flex: 1; margin: 0 15px;"> 
+            <h3 style="font-family: Open Sans; text-align: center; font-size: x-large;"> <u>IRWIN´S REVENGE</u> </h3>
+            <div style="background-color: lightgoldenrodyellow; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;display: flex; flex-direction: column; align-items: center;">
+                
+                <img src="OIG3.jpeg" alt="Proyecto 1" style="width: 44.5%; height: auto; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                
+                <p style="margin-top: 15px; font-family: 'Open Sans'; text-align: justify;">
+                    Este es mi primer proyecto, fue realizado de manera grupal en el primer cuatrimestre de la facultad con programacion estrucuturada, Utilizando conocimientos en C/C++ <br>
+                    El juego se ejecuta en consola y en el ocupamos la posicion de Irwin, donde tenemos que conseguir todas las estatuillas para poder ganar a otro jugador o a la misma computadora
+                </p>
+
+            </div>
+        </div>
+
+        
+        <div style="flex: 1; margin: 0 5px;"> 
+
+            <h3 style="font-family: Open Sans; text-align: center; font-size: x-large;"> <u>ROUGH SPACE</u> </h3>
+
+            <div style="background-color: lightgoldenrodyellow; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; align-items: center;">
+
+                <img src="rspace.png" alt="Proyecto 2" style="width: 50%; height: auto; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                <p style="margin-top: 15px; font-family: 'Open Sans'; text-align: justify;">
+                    Este es mi segundo proyecto, lo realicé de forma grupal en el segundo cuatrimestre de la facultad, con conocimientos en C, C++ y SFML. <br> 
+                    En este juego ocupamos la posición de un astronauta encargado de recuperar las estrellas del universo. Para lograrlo, debemos esquivar los meteoritos que van cayendo y el OVNI que intentará robarnos las estrellas. <br> 
+                    El juego establece un sistema de guardado de puntos (estrellas recolectadas), junto con el nombre del jugador. Podremos eliminar las partidas que ya no queramos.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section id="scContacto" style="margin-top: 120px; display: flex; flex-direction: column; align-items: center;">
+    <h2 style="font-family: Open Sans; font-size: xx-large; text-align: center;"> <u>Contacto</u> </h2>
+
+    <div class="EstiloContacto">
+        <label for=""> <b>Nombre: </b></label> <input type="text" name="" id="txtNombre">
+        
+        <div>
+            <label for=""> <b>E-Mail:  </b> </label>  <input type="text" id="txtEmail"> 
+        </div>
+        
+        <div style="margin-top: 25px ;">
+            <label for=""> <b>Mensaje</b> </label> 
+            <div>
+                <textarea id="txtMensaje" style="width: 100%; height: 300px;"></textarea>
+            </div>
+        </div>
+        <div style="margin-top: 35px;">
+            <button style="background-color: green;" onclick="ENVIAR()">  ENVIAR</button>
+        </div>
+    </div>
+    
+    
+</section>
+
+
+
+
+
+
+<section id="scRedes" style="margin-top: 70px;">
+    <h2 style="text-align: center; font-family: Open Sans;"">
+        <u>Mis Redes</u>
+    </h2>
+    <div class="Footer">
+    <a href="https://www.linkedin.com/in/joaqu%C3%ADn-ezequiel-l%C3%B3pez-90a471320/" target="_blank">
+        <img src="linkedin.png" alt="linkedin" width="80px" style="margin: 30px 0;">
+    </a>
+    
+    <a href="https://github.com/JoaquinEzequiel"  target="_blank">
+    <img src="github.png" alt="github" width=" 55px" style="margin: 40px 0;">
+    </a>
+    
+    <a href="https://www.instagram.com/joaqxlp_/?next=%2F" target="_blank">
+        <img src="Instagram.png" alt="Instagram" width="80px" style="margin: 42px 0;">
+    </a>
+    
+    </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+
